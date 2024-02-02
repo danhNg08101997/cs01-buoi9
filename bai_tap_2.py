@@ -2,8 +2,12 @@
 lst_number = [2,7,11,15]
 # process
 def two_sum (lst, target):
-    for num in lst_number:
-        isValid = 9-num
-        
+    output = []
+    for index, value in enumerate(lst):
+        result = target - value
+        for i in range(index + 1, len(lst)):
+            if lst[i] == result:
+                output = [index, i]
+    return output
 # Output: [0,1] vì num[0] + num[1] = 2+7 = 9 ngược lại nếu không có
-print(two_sum(lst_number, 9))
+print(two_sum(lst_number, 24))
