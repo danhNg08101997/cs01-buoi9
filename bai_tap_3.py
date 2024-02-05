@@ -5,7 +5,7 @@
 # output: 5 (mảng mói là [1,2,3,4,5])
 
 # Input:
-lst_number = [1,1,1,2,2,3,4,4,5]
+# lst_number = [1,1,1,2,2,3,4,4,5]
 # Process
 def remove_duplicate_lst(nums):
     # Cách 1:
@@ -24,6 +24,6 @@ def remove_duplicate_lst(nums):
                 break
         if not flag:
             output.append(value)
-    return len(output)
+    return output
 # Output:
-print('Output: ', remove_duplicate_lst(lst_number))
+# print('Output: ', len(remove_duplicate_lst(lst_number)))
