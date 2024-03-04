@@ -26,4 +26,4 @@ def remove_duplicate_lst(nums):
             output.append(value)
     return output
 # Output:
-# print('Output: ', len(remove_duplicate_lst(lst_number)))
+# print('Output: ', remove_duplicate_lst(lst_number))
